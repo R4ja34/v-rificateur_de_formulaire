@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulaire de Vérification</title>
+</head>
+<body>
+  
+  <form id="myForm" class="form">
+    <label for="firstName">Prénom:</label>
+    <input type="text" id="firstName" name="firstName" required="required">
+    
+    <label for="lastName">Nom:</label>
+    <input type="text" id="lastName" name="lastName" required="required">
+    
+    <label for="age">Âge:</label>
+    <input type="number" id="age" name="age" required="required">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="required" autocomplete="username">
+    
+    <label for="confirmEmail">Confirmer Email:</label>
+    <input type="" id="confirmEmail" name="confirmEmail" required="required">
+    
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password" required="required"  autocomplete="new-password">
+    
+    <label for="confirmPassword">Confirmer Mot de passe:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required="required" autocomplete="new-password">
+    
+    <label for="acceptCGU">Accepter les CGU:</label>
+    <input type="checkbox" id="acceptCGU" name="acceptCGU">
+    
+    <button type="button" onclick="validateForm()">Soumettre</button>
+  </form>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
